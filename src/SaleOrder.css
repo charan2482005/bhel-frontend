@@ -1,0 +1,17 @@
+.excel-btn {
+  background: #0a3d78;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.excel-btn:hover {
+  background: #12539c;
+  transform: translateY(-2px);
+}

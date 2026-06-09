@@ -1,0 +1,198 @@
+.form-container {
+  margin-top: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.floating-group {
+  position: relative;
+  width: 100%;
+}
+
+.floating-group input,
+.floating-group textarea {
+  width: 100%;
+  padding: 14px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+.floating-group textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+.floating-group input:focus,
+.floating-group textarea:focus {
+  border-color: #003366;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+.floating-group label {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  background: white;
+  padding: 0 5px;
+  color: #64748b;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+.floating-group input:focus + label,
+.floating-group input:not(:placeholder-shown) + label,
+.floating-group textarea:focus + label,
+.floating-group textarea:not(:placeholder-shown) + label {
+  top: -9px;
+  left: 10px;
+  font-size: 12px;
+  color: #003366;
+  font-weight: 600;
+}
+
+.action-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.action-bar button {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.action-bar button:hover {
+  background: #003366;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th {
+  background: #003366;
+  color: white;
+  padding: 12px;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+/* Tabs */
+.top-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 25px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.top-tabs button {
+  background: white;
+  border: 2px solid #003366;
+  color: #003366;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.top-tabs button:hover {
+  background: #003366;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.top-tabs button.active {
+  background: #003366;
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* File Upload */
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.custom-file-upload {
+  background: #003366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-file-upload:hover {
+  background: #003366;
+}
+
+.custom-file-upload input {
+  display: none;
+}
+
+.file-name {
+  color: #555;
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+.form-card{
+  background:white;
+  margin:30px;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+.nav-btn{
+  padding:14px 30px;
+  border-radius:12px;
+  border:2px solid #003366;
+  background:white;
+  color:#003366;
+  font-weight:600;
+  font-size:17px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.nav-btn:hover{
+  background:#003366;
+  color:white;
+}
+
+.nav-btn.active{
+  background:#003366;
+  color:white;
+}
+body{
+  background:#f4f6f9;
+}
