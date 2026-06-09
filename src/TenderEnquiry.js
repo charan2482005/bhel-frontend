@@ -32,7 +32,7 @@ function TenderEnquiry({ setIsLoggedIn }) {
   const fetchEnquiries = async () => {
 
   const response = await axios.get(
-    'http://localhost:5000/api/hpvp/all'
+    'https://bhel-complaint-system.onrender.com/api/hpvp/all'
   );
 
   console.log("ENQUIRIES =", response.data);
@@ -63,7 +63,7 @@ function TenderEnquiry({ setIsLoggedIn }) {
 
       await axios.post(
 
-        'http://localhost:5000/api/hpvp/create',
+        'https://bhel-complaint-system.onrender.com/api/hpvp/create',
 
         data,
 

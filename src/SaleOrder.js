@@ -14,7 +14,7 @@ function SaleOrder() {
   const fetchSaleOrders = async () => {
 
     const response = await axios.get(
-      'http://localhost:5000/api/saleorder/all'
+      'https://bhel-complaint-system.onrender.com/api/saleorder/all'
     );
 
     setSaleOrders(response.data);

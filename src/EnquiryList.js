@@ -17,7 +17,7 @@ const enquiriesPerPage = 15;
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/hpvp/all"
+        "https://bhel-complaint-system.onrender.com/api/hpvp/all"
       );
 
       setEnquiries(response.data.reverse());
@@ -231,7 +231,7 @@ const formatDateTime = (date) => {
 
                 {item.document_name ? (
   <a
-    href={`http://localhost:5000/uploads/${item.document_name}`}
+    href={`https://bhel-complaint-system.onrender.com/uploads/${item.document_name}`}
                     target="_blank"
                     rel="noreferrer"
                   >
