@@ -114,7 +114,14 @@ setActiveTab("view");
   }}
 >
   <button
-    onClick={() => setIsLoggedIn(false)}
+  onClick={() => {
+
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("loginTime");
+
+    setIsLoggedIn(false);
+
+  }}
     style={{
       background: "#dc3545",
       color: "white",

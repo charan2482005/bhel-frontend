@@ -52,9 +52,12 @@ function Login({ setIsLoggedIn }) {
 
       if (response.data.success) {
 
-        setIsLoggedIn(true);
+  localStorage.setItem("isLoggedIn", "true");
+  localStorage.setItem("loginTime", Date.now());
 
-      } else {
+  setIsLoggedIn(true);
+
+} else {
 
         alert('Invalid Credentials');
 

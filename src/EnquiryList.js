@@ -6,6 +6,7 @@ import { saveAs } from "file-saver";
 function EnquiryList() {
 
   const [enquiries, setEnquiries] = useState([]);
+  const [search, setSearch] = useState("");
 const [currentPage, setCurrentPage] = useState(1);
 const enquiriesPerPage = 15;
   useEffect(() => {
@@ -20,7 +21,7 @@ const enquiriesPerPage = 15;
         "https://bhel-complaint-system.onrender.com/api/hpvp/all"
       );
 
-      setEnquiries(response.data.reverse());
+      setEnquiries(response.data);
 
     } catch (error) {
 
@@ -81,20 +82,26 @@ REMARKS: item.remarks
     saveAs(data, "TenderEnquiries.xlsx");
 
   };
+  const filteredEnquiries = enquiries.filter((item) =>
+  item.hpvp_enq_no?.toLowerCase().includes(search.toLowerCase()) ||
+  item.customer?.toLowerCase().includes(search.toLowerCase()) ||
+  item.sector?.toLowerCase().includes(search.toLowerCase()) ||
+  item.status?.toLowerCase().includes(search.toLowerCase())
+);
 const indexOfLast = currentPage * enquiriesPerPage;
 
 const indexOfFirst =
   indexOfLast - enquiriesPerPage;
 
 const currentEnquiries =
-  enquiries.slice(
+  filteredEnquiries.slice(
     indexOfFirst,
     indexOfLast
   );
 
 const totalPages =
   Math.ceil(
-    enquiries.length /
+    filteredEnquiries.length /
     enquiriesPerPage
   );
 const formatDateTime = (date) => {
@@ -143,7 +150,22 @@ const formatDateTime = (date) => {
       >
 
         <h2>All Tender Enquiries</h2>
-
+       <input
+  type="text"
+  placeholder="Search by Enquiry No, Customer, Sector, Status"
+  value={search}
+  onChange={(e) => {
+    setSearch(e.target.value);
+    setCurrentPage(1);
+  }}
+  style={{
+    padding: "10px",
+    width: "450px",
+    borderRadius: "8px",
+    border: "1px solid #ccc",
+    marginBottom: "15px"
+  }}
+/>
         <button
           onClick={downloadExcel}
           style={{
