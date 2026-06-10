@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# BHEL Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend application for the BHEL HPVP Marketing Management System developed using ReactJS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Authentication
+- Login Page
+- CAPTCHA Verification
+- Session Persistence
+- Logout Functionality
 
-### `npm start`
+### Tender Enquiry Module
+- Add Tender Enquiry
+- Upload Documents
+- Form Validation
+- Responsive UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### View Enquiries
+- Search Functionality
+- Date-wise Sorting
+- Pagination
+- Excel Export
+- View Documents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Sale Order Module
+- View Sale Orders
+- Excel Export
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technology Stack
 
-### `npm run build`
+- ReactJS
+- Axios
+- CSS
+- XLSX
+- File Saver
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/charan2482005/bhel-frontend.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Run Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Application URL
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```text
+http://localhost:3000
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```text
+src/
+│
+├── App.js
+├── Login.js
+├── Home.js
+├── TenderEnquiry.js
+├── EnquiryList.js
+├── SaleOrder.js
+├── TenderEnquiry.css
+└── Other Components
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Production Deployment
 
-### Making a Progressive Web App
+Frontend deployed using Vercel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```text
+https://bhel-frontend-snowy.vercel.app
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Major Enhancements
 
-### Deployment
+- Modern Responsive UI
+- CAPTCHA Login Security
+- Search and Filtering
+- Pagination
+- Excel Export
+- Document Viewing
+- Cloud Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sai Charan
+
+Industrial Internship Project
+
+BHEL HPVP Marketing Management System
